@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E212CCB2C4C2E5A00A9850A /* FandomQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CCA2C4C2E5A00A9850A /* FandomQuestApp.swift */; };
+		3E212CCD2C4C2E5A00A9850A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CCC2C4C2E5A00A9850A /* ContentView.swift */; };
+		3E212CCF2C4C2E5B00A9850A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E212CCE2C4C2E5B00A9850A /* Assets.xcassets */; };
+		3E212CD22C4C2E5B00A9850A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E212CD12C4C2E5B00A9850A /* Preview Assets.xcassets */; };
+		3E212CDC2C4C2E5B00A9850A /* FandomQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CDB2C4C2E5B00A9850A /* FandomQuestTests.swift */; };
+		3E212CE62C4C2E5B00A9850A /* FandomQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CE52C4C2E5B00A9850A /* FandomQuestUITests.swift */; };
+		3E212CE82C4C2E5B00A9850A /* FandomQuestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CE72C4C2E5B00A9850A /* FandomQuestUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E212CD82C4C2E5B00A9850A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E212CBF2C4C2E5A00A9850A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E212CC62C4C2E5A00A9850A;
+			remoteInfo = FandomQuest;
+		};
+		3E212CE22C4C2E5B00A9850A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E212CBF2C4C2E5A00A9850A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E212CC62C4C2E5A00A9850A;
+			remoteInfo = FandomQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E212CC72C4C2E5A00A9850A /* FandomQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FandomQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E212CCA2C4C2E5A00A9850A /* FandomQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FandomQuestApp.swift; sourceTree = "<group>"; };
+		3E212CCC2C4C2E5A00A9850A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3E212CCE2C4C2E5B00A9850A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E212CD12C4C2E5B00A9850A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E212CD72C4C2E5B00A9850A /* FandomQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FandomQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E212CDB2C4C2E5B00A9850A /* FandomQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FandomQuestTests.swift; sourceTree = "<group>"; };
+		3E212CE12C4C2E5B00A9850A /* FandomQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FandomQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E212CE52C4C2E5B00A9850A /* FandomQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FandomQuestUITests.swift; sourceTree = "<group>"; };
+		3E212CE72C4C2E5B00A9850A /* FandomQuestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FandomQuestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E212CC42C4C2E5A00A9850A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E212CD42C4C2E5B00A9850A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E212CDE2C4C2E5B00A9850A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E212CBE2C4C2E5A00A9850A = {
+			isa = PBXGroup;
+			children = (
+				3E212CC92C4C2E5A00A9850A /* FandomQuest */,
+				3E212CDA2C4C2E5B00A9850A /* FandomQuestTests */,
+				3E212CE42C4C2E5B00A9850A /* FandomQuestUITests */,
+				3E212CC82C4C2E5A00A9850A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E212CC82C4C2E5A00A9850A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E212CC72C4C2E5A00A9850A /* FandomQuest.app */,
+				3E212CD72C4C2E5B00A9850A /* FandomQuestTests.xctest */,
+				3E212CE12C4C2E5B00A9850A /* FandomQuestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E212CC92C4C2E5A00A9850A /* FandomQuest */ = {
+			isa = PBXGroup;
+			children = (
+				3E212CCA2C4C2E5A00A9850A /* FandomQuestApp.swift */,
+				3E212CCC2C4C2E5A00A9850A /* ContentView.swift */,
+				3E212CCE2C4C2E5B00A9850A /* Assets.xcassets */,
+				3E212CD02C4C2E5B00A9850A /* Preview Content */,
+			);
+			path = FandomQuest;
+			sourceTree = "<group>";
+		};
+		3E212CD02C4C2E5B00A9850A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3E212CD12C4C2E5B00A9850A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3E212CDA2C4C2E5B00A9850A /* FandomQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E212CDB2C4C2E5B00A9850A /* FandomQuestTests.swift */,
+			);
+			path = FandomQuestTests;
+			sourceTree = "<group>";
+		};
+		3E212CE42C4C2E5B00A9850A /* FandomQuestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E212CE52C4C2E5B00A9850A /* FandomQuestUITests.swift */,
+				3E212CE72C4C2E5B00A9850A /* FandomQuestUITestsLaunchTests.swift */,
+			);
+			path = FandomQuestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E212CC62C4C2E5A00A9850A /* FandomQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E212CEB2C4C2E5B00A9850A /* Build configuration list for PBXNativeTarget "FandomQuest" */;
+			buildPhases = (
+				3E212CC32C4C2E5A00A9850A /* Sources */,
+				3E212CC42C4C2E5A00A9850A /* Frameworks */,
+				3E212CC52C4C2E5A00A9850A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FandomQuest;
+			productName = FandomQuest;
+			productReference = 3E212CC72C4C2E5A00A9850A /* FandomQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E212CD62C4C2E5B00A9850A /* FandomQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E212CEE2C4C2E5B00A9850A /* Build configuration list for PBXNativeTarget "FandomQuestTests" */;
+			buildPhases = (
+				3E212CD32C4C2E5B00A9850A /* Sources */,
+				3E212CD42C4C2E5B00A9850A /* Frameworks */,
+				3E212CD52C4C2E5B00A9850A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E212CD92C4C2E5B00A9850A /* PBXTargetDependency */,
+			);
+			name = FandomQuestTests;
+			productName = FandomQuestTests;
+			productReference = 3E212CD72C4C2E5B00A9850A /* FandomQuestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E212CE02C4C2E5B00A9850A /* FandomQuestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E212CF12C4C2E5B00A9850A /* Build configuration list for PBXNativeTarget "FandomQuestUITests" */;
+			buildPhases = (
+				3E212CDD2C4C2E5B00A9850A /* Sources */,
+				3E212CDE2C4C2E5B00A9850A /* Frameworks */,
+				3E212CDF2C4C2E5B00A9850A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E212CE32C4C2E5B00A9850A /* PBXTargetDependency */,
+			);
+			name = FandomQuestUITests;
+			productName = FandomQuestUITests;
+			productReference = 3E212CE12C4C2E5B00A9850A /* FandomQuestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E212CBF2C4C2E5A00A9850A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3E212CC62C4C2E5A00A9850A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					3E212CD62C4C2E5B00A9850A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3E212CC62C4C2E5A00A9850A;
+					};
+					3E212CE02C4C2E5B00A9850A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3E212CC62C4C2E5A00A9850A;
+					};
+				};
+			};
+			buildConfigurationList = 3E212CC22C4C2E5A00A9850A /* Build configuration list for PBXProject "FandomQuest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E212CBE2C4C2E5A00A9850A;
+			productRefGroup = 3E212CC82C4C2E5A00A9850A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E212CC62C4C2E5A00A9850A /* FandomQuest */,
+				3E212CD62C4C2E5B00A9850A /* FandomQuestTests */,
+				3E212CE02C4C2E5B00A9850A /* FandomQuestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E212CC52C4C2E5A00A9850A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E212CD22C4C2E5B00A9850A /* Preview Assets.xcassets in Resources */,
+				3E212CCF2C4C2E5B00A9850A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E212CD52C4C2E5B00A9850A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E212CDF2C4C2E5B00A9850A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E212CC32C4C2E5A00A9850A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E212CCD2C4C2E5A00A9850A /* ContentView.swift in Sources */,
+				3E212CCB2C4C2E5A00A9850A /* FandomQuestApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E212CD32C4C2E5B00A9850A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E212CDC2C4C2E5B00A9850A /* FandomQuestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E212CDD2C4C2E5B00A9850A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E212CE82C4C2E5B00A9850A /* FandomQuestUITestsLaunchTests.swift in Sources */,
+				3E212CE62C4C2E5B00A9850A /* FandomQuestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E212CD92C4C2E5B00A9850A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E212CC62C4C2E5A00A9850A /* FandomQuest */;
+			targetProxy = 3E212CD82C4C2E5B00A9850A /* PBXContainerItemProxy */;
+		};
+		3E212CE32C4C2E5B00A9850A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E212CC62C4C2E5A00A9850A /* FandomQuest */;
+			targetProxy = 3E212CE22C4C2E5B00A9850A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3E212CE92C4C2E5B00A9850A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E212CEA2C4C2E5B00A9850A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E212CEC2C4C2E5B00A9850A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FandomQuest/Preview Content\"";
+				DEVELOPMENT_TEAM = 77C7P64W9X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandodiaz.FandomQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E212CED2C4C2E5B00A9850A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FandomQuest/Preview Content\"";
+				DEVELOPMENT_TEAM = 77C7P64W9X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandodiaz.FandomQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E212CEF2C4C2E5B00A9850A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77C7P64W9X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandodiaz.FandomQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FandomQuest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FandomQuest";
+			};
+			name = Debug;
+		};
+		3E212CF02C4C2E5B00A9850A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77C7P64W9X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandodiaz.FandomQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FandomQuest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FandomQuest";
+			};
+			name = Release;
+		};
+		3E212CF22C4C2E5B00A9850A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77C7P64W9X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandodiaz.FandomQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FandomQuest;
+			};
+			name = Debug;
+		};
+		3E212CF32C4C2E5B00A9850A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77C7P64W9X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandodiaz.FandomQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FandomQuest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E212CC22C4C2E5A00A9850A /* Build configuration list for PBXProject "FandomQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E212CE92C4C2E5B00A9850A /* Debug */,
+				3E212CEA2C4C2E5B00A9850A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E212CEB2C4C2E5B00A9850A /* Build configuration list for PBXNativeTarget "FandomQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E212CEC2C4C2E5B00A9850A /* Debug */,
+				3E212CED2C4C2E5B00A9850A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E212CEE2C4C2E5B00A9850A /* Build configuration list for PBXNativeTarget "FandomQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E212CEF2C4C2E5B00A9850A /* Debug */,
+				3E212CF02C4C2E5B00A9850A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E212CF12C4C2E5B00A9850A /* Build configuration list for PBXNativeTarget "FandomQuestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E212CF22C4C2E5B00A9850A /* Debug */,
+				3E212CF32C4C2E5B00A9850A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E212CBF2C4C2E5A00A9850A /* Project object */;
+}
