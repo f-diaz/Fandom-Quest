@@ -14,6 +14,10 @@
 		3E212CDC2C4C2E5B00A9850A /* FandomQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CDB2C4C2E5B00A9850A /* FandomQuestTests.swift */; };
 		3E212CE62C4C2E5B00A9850A /* FandomQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CE52C4C2E5B00A9850A /* FandomQuestUITests.swift */; };
 		3E212CE82C4C2E5B00A9850A /* FandomQuestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CE72C4C2E5B00A9850A /* FandomQuestUITestsLaunchTests.swift */; };
+		3E212CF82C4C2EC800A9850A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CF72C4C2EC800A9850A /* Card.swift */; };
+		3E212CFA2C4C2EF300A9850A /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CF92C4C2EF300A9850A /* GameModel.swift */; };
+		3E212CFC2C4C2F1100A9850A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CFB2C4C2F1100A9850A /* GameViewModel.swift */; };
+		3E212CFE2C4C2F3600A9850A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CFD2C4C2F3600A9850A /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		3E212CE12C4C2E5B00A9850A /* FandomQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FandomQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E212CE52C4C2E5B00A9850A /* FandomQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FandomQuestUITests.swift; sourceTree = "<group>"; };
 		3E212CE72C4C2E5B00A9850A /* FandomQuestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FandomQuestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3E212CF72C4C2EC800A9850A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		3E212CF92C4C2EF300A9850A /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		3E212CFB2C4C2F1100A9850A /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		3E212CFD2C4C2F3600A9850A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				3E212CCA2C4C2E5A00A9850A /* FandomQuestApp.swift */,
-				3E212CCC2C4C2E5A00A9850A /* ContentView.swift */,
+				3E212CF42C4C2E6400A9850A /* Model */,
+				3E212CF52C4C2E6A00A9850A /* ViewModel */,
+				3E212CF62C4C2E7400A9850A /* View */,
 				3E212CCE2C4C2E5B00A9850A /* Assets.xcassets */,
 				3E212CD02C4C2E5B00A9850A /* Preview Content */,
 			);
@@ -125,6 +135,32 @@
 				3E212CE72C4C2E5B00A9850A /* FandomQuestUITestsLaunchTests.swift */,
 			);
 			path = FandomQuestUITests;
+			sourceTree = "<group>";
+		};
+		3E212CF42C4C2E6400A9850A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E212CF72C4C2EC800A9850A /* Card.swift */,
+				3E212CF92C4C2EF300A9850A /* GameModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E212CF52C4C2E6A00A9850A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3E212CFB2C4C2F1100A9850A /* GameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3E212CF62C4C2E7400A9850A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E212CCC2C4C2E5A00A9850A /* ContentView.swift */,
+				3E212CFD2C4C2F3600A9850A /* CardView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E212CCD2C4C2E5A00A9850A /* ContentView.swift in Sources */,
+				3E212CFA2C4C2EF300A9850A /* GameModel.swift in Sources */,
+				3E212CF82C4C2EC800A9850A /* Card.swift in Sources */,
+				3E212CFC2C4C2F1100A9850A /* GameViewModel.swift in Sources */,
+				3E212CFE2C4C2F3600A9850A /* CardView.swift in Sources */,
 				3E212CCB2C4C2E5A00A9850A /* FandomQuestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
