@@ -12,4 +12,13 @@ struct GameModel {
     var cards: [Card]  // Colección de cartas en el juego
     var score: Int  // Puntuación actual del jugador
     var moves: Int  // Número de movimientos realizados
+    var comboStreak: Int  // Contador de aciertos consecutivos
+    
+    mutating func resetComboStreak() {
+        comboStreak = 0
+    }
+    
+    mutating func incrementComboStreak() {
+        comboStreak += 1
+    }
 }

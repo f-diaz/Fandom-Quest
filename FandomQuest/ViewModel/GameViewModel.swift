@@ -4,7 +4,6 @@
 //
 //  Created by Fernando Diaz de Tudela on 20/7/24.
 //
-
 import SwiftUI
 import Combine
 
@@ -69,10 +68,12 @@ class GameViewModel: ObservableObject {
         if model.cards[firstIndex].character == model.cards[secondIndex].character {
             model.cards[firstIndex].isMatched = true
             model.cards[secondIndex].isMatched = true
-            model.score += 2
+            model.incrementComboStreak()
+            model.score += 2 + model.comboStreak  // Bonificación por combo
             faceUpCardIndices.removeAll()
         } else {
-            model.score = max(0, model.score - 1)
+            model.resetComboStreak()
+            model.score = max(0, model.score - 1)  // Penalización por error
             autoCloseTimer = Timer.publish(every: 0.5, on: .main, in: .common)
                 .autoconnect()
                 .first()
@@ -110,6 +111,6 @@ class GameViewModel: ObservableObject {
         
         cards.shuffle()
         
-        return GameModel(cards: cards, score: 0, moves: 0)
+        return GameModel(cards: cards, score: 0, moves: 0, comboStreak: 0)
     }
 }
