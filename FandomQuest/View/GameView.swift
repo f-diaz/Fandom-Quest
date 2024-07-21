@@ -7,12 +7,15 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct GameView: View {
     @StateObject private var viewModel: GameViewModel
     @State private var selectedBiography: String = ""
     
     init(game: Game) {
-        _viewModel = StateObject(wrappedValue: GameViewModel(game: game, numberOfPairsOfCards: 8))
+        let viewModel = GameViewModel(game: game, numberOfPairsOfCards: 8)
+        _viewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {
@@ -38,6 +41,9 @@ struct GameView: View {
             Button("New Game") {
                 viewModel.newGame()
                 selectedBiography = ""
+                viewModel.onPairMatched = { biography in
+                    self.selectedBiography = biography
+                }
             }
             .padding()
         }

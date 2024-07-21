@@ -86,15 +86,23 @@ class GameViewModel: ObservableObject {
     
     private static func createNewGame(from game: Game, numberOfPairsOfCards: Int) -> GameModel {
         var cards: [Card] = []
-        let selectedCards = game.cards.prefix(numberOfPairsOfCards)
-        
-        for card in selectedCards {
-            cards.append(card)
-            cards.append(Card(character: card.character, imageName: card.imageName, biography: card.biography))
+        var uniqueCharacters = Set<String>()
+        let shuffledCards = game.cards.shuffled()
+
+        for card in shuffledCards {
+            if uniqueCharacters.count < numberOfPairsOfCards {
+                if !uniqueCharacters.contains(card.character) {
+                    uniqueCharacters.insert(card.character)
+                    cards.append(Card(character: card.character, imageName: card.imageName, biography: card.biography))
+                    cards.append(Card(character: card.character, imageName: card.imageName, biography: card.biography))
+                }
+            } else {
+                break
+            }
         }
-        
+
         cards.shuffle()
-        
+
         return GameModel(cards: cards, score: 0, moves: 0, comboStreak: 0)
     }
 }
