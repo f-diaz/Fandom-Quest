@@ -4,6 +4,7 @@
 //
 //  Created by Fernando Diaz de Tudela on 20/7/24.
 //
+
 import SwiftUI
 
 struct GameView: View {
@@ -25,6 +26,7 @@ struct GameView: View {
             Text(selectedBiography)
                 .font(.caption)
                 .padding()
+                .frame(maxWidth: .infinity, alignment: .center)
             
             HStack {
                 Text("Score: \(viewModel.score)")
@@ -40,6 +42,11 @@ struct GameView: View {
             .padding()
         }
         .padding()
+        .onAppear {
+            viewModel.onPairMatched = { biography in
+                self.selectedBiography = biography
+            }
+        }
     }
     
     var gameBody: some View {
@@ -49,9 +56,6 @@ struct GameView: View {
                     .aspectRatio(2/3, contentMode: .fit)
                     .onTapGesture {
                         viewModel.choose(card)
-                        if card.isFaceUp {
-                            selectedBiography = card.biography
-                        }
                     }
             }
         }

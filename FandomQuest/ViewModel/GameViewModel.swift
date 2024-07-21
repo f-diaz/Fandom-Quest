@@ -4,6 +4,7 @@
 //
 //  Created by Fernando Diaz de Tudela on 20/7/24.
 //
+
 import SwiftUI
 import Combine
 
@@ -16,6 +17,8 @@ class GameViewModel: ObservableObject {
     var cards: [Card] { model.cards }
     var score: Int { model.score }
     var moves: Int { model.moves }
+    
+    var onPairMatched: ((String) -> Void)? // Callback para cuando se emparejan cartas
     
     init(game: Game, numberOfPairsOfCards: Int) {
         self.gameName = game.name
@@ -55,6 +58,9 @@ class GameViewModel: ObservableObject {
             model.incrementComboStreak()
             model.score += 2 + model.comboStreak
             faceUpCardIndices.removeAll()
+            
+            // Callback para la biografía
+            onPairMatched?(model.cards[firstIndex].biography)
         } else {
             model.resetComboStreak()
             model.score = max(0, model.score - 1)
