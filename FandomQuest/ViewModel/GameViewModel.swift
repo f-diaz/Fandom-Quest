@@ -74,7 +74,7 @@ class GameViewModel: ObservableObject {
     
     func newGame() {
         autoCloseTimer?.cancel()
-        model = GameViewModel.createNewGame(from: Game(name: gameName, cards: model.cards), numberOfPairsOfCards: 10)
+        model = GameViewModel.createNewGame(from: Game(name: gameName, cards: model.cards), numberOfPairsOfCards: 8)
         faceUpCardIndices.removeAll()
     }
     

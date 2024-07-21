@@ -8,18 +8,23 @@ import SwiftUI
 
 struct GameView: View {
     @StateObject private var viewModel: GameViewModel
+    @State private var selectedBiography: String = ""
     
     init(game: Game) {
-        _viewModel = StateObject(wrappedValue: GameViewModel(game: game, numberOfPairsOfCards: 10))
+        _viewModel = StateObject(wrappedValue: GameViewModel(game: game, numberOfPairsOfCards: 8))
     }
     
     var body: some View {
         VStack {
             Text("\(viewModel.gameName) Memory Game")
-                .font(.largeTitle)
+                .font(.title)  // Título más pequeño
                 .padding()
             
             gameBody
+            
+            Text(selectedBiography)
+                .font(.caption)
+                .padding()
             
             HStack {
                 Text("Score: \(viewModel.score)")
@@ -30,6 +35,7 @@ struct GameView: View {
             
             Button("New Game") {
                 viewModel.newGame()
+                selectedBiography = ""
             }
             .padding()
         }
@@ -37,12 +43,15 @@ struct GameView: View {
     }
     
     var gameBody: some View {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 70))], spacing: 10) {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 60))], spacing: 10) {  // Cartas más pequeñas
             ForEach(viewModel.cards) { card in
                 CardView(card: card)
                     .aspectRatio(2/3, contentMode: .fit)
                     .onTapGesture {
                         viewModel.choose(card)
+                        if card.isFaceUp {
+                            selectedBiography = card.biography
+                        }
                     }
             }
         }
