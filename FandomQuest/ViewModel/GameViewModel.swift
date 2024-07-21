@@ -8,57 +8,41 @@ import SwiftUI
 import Combine
 
 class GameViewModel: ObservableObject {
-    // El modelo del juego, marcado como @Published para notificar a la vista de cambios
     @Published private var model: GameModel
-    
-    // Array para rastrear los índices de las cartas actualmente boca arriba
     @Published private var faceUpCardIndices: [Int] = []
-    
-    // Temporizador para cerrar las cartas automáticamente
     private var autoCloseTimer: AnyCancellable?
+    let gameName: String
     
-    // Propiedades computadas para exponer datos del modelo a la vista
     var cards: [Card] { model.cards }
     var score: Int { model.score }
     var moves: Int { model.moves }
     
-    // Inicializador del ViewModel
-    init(numberOfPairsOfCards: Int = 8) {
-        model = GameViewModel.createNewGame(numberOfPairsOfCards: numberOfPairsOfCards)
+    init(game: Game, numberOfPairsOfCards: Int) {
+        self.gameName = game.name
+        self.model = GameViewModel.createNewGame(from: game, numberOfPairsOfCards: numberOfPairsOfCards)
     }
     
-    // MARK: - Intent(s)
-    
-    // Maneja la intención del usuario de elegir una carta
     func choose(_ card: Card) {
-        // Cancela cualquier temporizador existente
         autoCloseTimer?.cancel()
         
-        // Busca el índice de la carta seleccionada
         if let chosenIndex = model.cards.firstIndex(where: { $0.id == card.id }),
            !model.cards[chosenIndex].isFaceUp,
            !model.cards[chosenIndex].isMatched {
             
-            // Si ya hay dos cartas boca arriba, las volteamos antes de procesar la nueva selección
             if faceUpCardIndices.count == 2 {
                 closeUnmatchedCards()
             }
             
-            // Voltea la carta seleccionada y añade su índice a faceUpCardIndices
             model.cards[chosenIndex].isFaceUp = true
             faceUpCardIndices.append(chosenIndex)
-            
-            // Incrementa el contador de movimientos
             model.moves += 1
             
-            // Si hay dos cartas boca arriba, verifica si hay coincidencia
             if faceUpCardIndices.count == 2 {
                 checkForMatch()
             }
         }
     }
     
-    // Verifica si hay un emparejamiento entre las dos cartas boca arriba
     private func checkForMatch() {
         guard faceUpCardIndices.count == 2 else { return }
         
@@ -69,11 +53,11 @@ class GameViewModel: ObservableObject {
             model.cards[firstIndex].isMatched = true
             model.cards[secondIndex].isMatched = true
             model.incrementComboStreak()
-            model.score += 2 + model.comboStreak  // Bonificación por combo
+            model.score += 2 + model.comboStreak
             faceUpCardIndices.removeAll()
         } else {
             model.resetComboStreak()
-            model.score = max(0, model.score - 1)  // Penalización por error
+            model.score = max(0, model.score - 1)
             autoCloseTimer = Timer.publish(every: 0.5, on: .main, in: .common)
                 .autoconnect()
                 .first()
@@ -83,30 +67,24 @@ class GameViewModel: ObservableObject {
         }
     }
     
-    // Cierra las cartas que no coinciden
     private func closeUnmatchedCards() {
         faceUpCardIndices.forEach { model.cards[$0].isFaceUp = false }
         faceUpCardIndices.removeAll()
     }
     
-    // Inicia un nuevo juego
     func newGame() {
         autoCloseTimer?.cancel()
-        model = GameViewModel.createNewGame(numberOfPairsOfCards: 8)
+        model = GameViewModel.createNewGame(from: Game(name: gameName, cards: model.cards), numberOfPairsOfCards: 10)
         faceUpCardIndices.removeAll()
     }
     
-    // Método estático para crear un nuevo juego
-    private static func createNewGame(numberOfPairsOfCards: Int) -> GameModel {
-        let characters = ["Luke", "Leia", "Han", "Chewbacca", "Darth Vader", "Yoda", "R2-D2", "C-3PO"]
-        let imageNames = ["luke", "leia", "han", "chewbacca", "vader", "yoda", "r2d2", "c3po"]
+    private static func createNewGame(from game: Game, numberOfPairsOfCards: Int) -> GameModel {
         var cards: [Card] = []
+        let selectedCards = game.cards.prefix(numberOfPairsOfCards)
         
-        for pairIndex in 0..<numberOfPairsOfCards {
-            let character = characters[pairIndex]
-            let imageName = imageNames[pairIndex]
-            cards.append(Card(character: character, imageName: imageName))
-            cards.append(Card(character: character, imageName: imageName))
+        for card in selectedCards {
+            cards.append(card)
+            cards.append(Card(character: card.character, imageName: card.imageName, biography: card.biography))
         }
         
         cards.shuffle()

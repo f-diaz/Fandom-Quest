@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E212CCB2C4C2E5A00A9850A /* FandomQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CCA2C4C2E5A00A9850A /* FandomQuestApp.swift */; };
-		3E212CCD2C4C2E5A00A9850A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CCC2C4C2E5A00A9850A /* ContentView.swift */; };
+		3E212CCD2C4C2E5A00A9850A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CCC2C4C2E5A00A9850A /* GameView.swift */; };
 		3E212CCF2C4C2E5B00A9850A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E212CCE2C4C2E5B00A9850A /* Assets.xcassets */; };
 		3E212CD22C4C2E5B00A9850A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E212CD12C4C2E5B00A9850A /* Preview Assets.xcassets */; };
 		3E212CDC2C4C2E5B00A9850A /* FandomQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CDB2C4C2E5B00A9850A /* FandomQuestTests.swift */; };
@@ -18,6 +18,10 @@
 		3E212CFA2C4C2EF300A9850A /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CF92C4C2EF300A9850A /* GameModel.swift */; };
 		3E212CFC2C4C2F1100A9850A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CFB2C4C2F1100A9850A /* GameViewModel.swift */; };
 		3E212CFE2C4C2F3600A9850A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212CFD2C4C2F3600A9850A /* CardView.swift */; };
+		3E212D062C4C4A9200A9850A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212D052C4C4A9200A9850A /* Game.swift */; };
+		3E212D082C4C4AEB00A9850A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212D072C4C4AEB00A9850A /* Data.swift */; };
+		3E212D0A2C4C4C1600A9850A /* GameSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212D092C4C4C1600A9850A /* GameSelectionView.swift */; };
+		3E212D0C2C4C4DD100A9850A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E212D0B2C4C4DD100A9850A /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,7 @@
 /* Begin PBXFileReference section */
 		3E212CC72C4C2E5A00A9850A /* FandomQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FandomQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E212CCA2C4C2E5A00A9850A /* FandomQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FandomQuestApp.swift; sourceTree = "<group>"; };
-		3E212CCC2C4C2E5A00A9850A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3E212CCC2C4C2E5A00A9850A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		3E212CCE2C4C2E5B00A9850A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E212CD12C4C2E5B00A9850A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E212CD72C4C2E5B00A9850A /* FandomQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FandomQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +56,10 @@
 		3E212CF92C4C2EF300A9850A /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		3E212CFB2C4C2F1100A9850A /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		3E212CFD2C4C2F3600A9850A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3E212D052C4C4A9200A9850A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		3E212D072C4C4AEB00A9850A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		3E212D092C4C4C1600A9850A /* GameSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectionView.swift; sourceTree = "<group>"; };
+		3E212D0B2C4C4DD100A9850A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +150,8 @@
 			children = (
 				3E212CF72C4C2EC800A9850A /* Card.swift */,
 				3E212CF92C4C2EF300A9850A /* GameModel.swift */,
+				3E212D052C4C4A9200A9850A /* Game.swift */,
+				3E212D072C4C4AEB00A9850A /* Data.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,8 +167,10 @@
 		3E212CF62C4C2E7400A9850A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3E212CCC2C4C2E5A00A9850A /* ContentView.swift */,
+				3E212CCC2C4C2E5A00A9850A /* GameView.swift */,
 				3E212CFD2C4C2F3600A9850A /* CardView.swift */,
+				3E212D092C4C4C1600A9850A /* GameSelectionView.swift */,
+				3E212D0B2C4C4DD100A9850A /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,12 +305,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E212CCD2C4C2E5A00A9850A /* ContentView.swift in Sources */,
+				3E212CCD2C4C2E5A00A9850A /* GameView.swift in Sources */,
 				3E212CFA2C4C2EF300A9850A /* GameModel.swift in Sources */,
+				3E212D062C4C4A9200A9850A /* Game.swift in Sources */,
 				3E212CF82C4C2EC800A9850A /* Card.swift in Sources */,
 				3E212CFC2C4C2F1100A9850A /* GameViewModel.swift in Sources */,
 				3E212CFE2C4C2F3600A9850A /* CardView.swift in Sources */,
+				3E212D0C2C4C4DD100A9850A /* ContentView.swift in Sources */,
+				3E212D0A2C4C4C1600A9850A /* GameSelectionView.swift in Sources */,
 				3E212CCB2C4C2E5A00A9850A /* FandomQuestApp.swift in Sources */,
+				3E212D082C4C4AEB00A9850A /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

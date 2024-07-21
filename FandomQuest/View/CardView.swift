@@ -4,7 +4,6 @@
 //
 //  Created by Fernando Diaz de Tudela on 20/7/24.
 //
-
 import SwiftUI
 
 struct CardView: View {
@@ -27,6 +26,13 @@ struct CardView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.black)
                         .padding(.horizontal, 5)
+                        .background(Color.white)
+                        .cornerRadius(5)
+                    
+                    Text(card.biography)
+                        .font(.caption2)
+                        .foregroundColor(.black)
+                        .padding(5)
                         .background(Color.white)
                         .cornerRadius(5)
                 }

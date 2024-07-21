@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+// Representa un juego con un tema específico
+struct Game {
+    let name: String
+    let cards: [Card]
+}
