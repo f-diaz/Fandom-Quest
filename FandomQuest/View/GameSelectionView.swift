@@ -12,23 +12,21 @@ struct GameSelectionView: View {
     var games: [Game]
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("Select a Game")
-                    .font(.largeTitle)
-                    .padding()
-                
-                List(games, id: \.name) { game in
-                    Button(action: {
-                        selectedGame = game
-                    }) {
-                        Text(game.name)
-                    }
+        VStack {
+            Text("Select a Game")
+                .font(.largeTitle)
+                .padding()
+            
+            List(games, id: \.name) { game in
+                Button(action: {
+                    selectedGame = game
+                }) {
+                    Text(game.name)
                 }
-                .listStyle(InsetGroupedListStyle())
             }
-            .navigationBarTitle("Game Selection")
+            .listStyle(InsetGroupedListStyle())
         }
+        .navigationBarTitle("Game Selection")
     }
 }
 

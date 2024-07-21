@@ -7,9 +7,8 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct GameView: View {
+    @Environment(\.presentationMode) var presentationMode
     @StateObject private var viewModel: GameViewModel
     @State private var selectedBiography: String = ""
     
@@ -21,31 +20,42 @@ struct GameView: View {
     var body: some View {
         VStack {
             Text("\(viewModel.gameName) Memory Game")
-                .font(.title)  // Título más pequeño
-                .padding()
+                .font(.headline)  // Título más pequeño
+                .padding(.top)
             
             gameBody
             
             Text(selectedBiography)
                 .font(.caption)
-                .padding()
+                .padding(.horizontal)
                 .frame(maxWidth: .infinity, alignment: .center)
+                .lineLimit(3)  // Menos espacio para la biografía
+            
+            HStack {
+                Button("Atrás") {
+                    presentationMode.wrappedValue.dismiss()
+                }
+                .padding()
+                
+                Spacer()
+                
+                Button("New Game") {
+                    viewModel.newGame()
+                    selectedBiography = ""
+                    viewModel.onPairMatched = { biography in
+                        self.selectedBiography = biography
+                    }
+                }
+                .padding()
+            }
+            .padding(.horizontal)
             
             HStack {
                 Text("Score: \(viewModel.score)")
                 Spacer()
                 Text("Moves: \(viewModel.moves)")
             }
-            .padding()
-            
-            Button("New Game") {
-                viewModel.newGame()
-                selectedBiography = ""
-                viewModel.onPairMatched = { biography in
-                    self.selectedBiography = biography
-                }
-            }
-            .padding()
+            .padding(.horizontal)
         }
         .padding()
         .onAppear {
@@ -65,7 +75,7 @@ struct GameView: View {
                     }
             }
         }
-        .padding()
+        .padding(.horizontal)
     }
 }
 
