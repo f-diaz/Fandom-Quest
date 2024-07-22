@@ -19,18 +19,7 @@ struct GameView: View {
     
     var body: some View {
         VStack {
-            Text("\(viewModel.gameName) Memory Game")
-                .font(.headline)  // Título más pequeño
-                .padding(.top)
-            
-            gameBody
-            
-            Text(selectedBiography)
-                .font(.caption)
-                .padding(.horizontal)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .lineLimit(3)  // Menos espacio para la biografía
-            
+            // Botones "Atrás" y "New Game"
             HStack {
                 Button("Atrás") {
                     presentationMode.wrappedValue.dismiss()
@@ -50,12 +39,28 @@ struct GameView: View {
             }
             .padding(.horizontal)
             
+            // Puntuación y movimientos
             HStack {
                 Text("Score: \(viewModel.score)")
                 Spacer()
                 Text("Moves: \(viewModel.moves)")
             }
             .padding(.horizontal)
+            
+            // Título del juego
+            Text("\(viewModel.gameName) Memory Game")
+                .font(.headline)  // Título más pequeño
+                .padding(.top)
+            
+            // Cartas
+            gameBody
+            
+            // Biografía
+            Text(selectedBiography)
+                .font(.caption)
+                .padding(.horizontal)
+                .frame(maxWidth: .infinity, alignment: .center)
+                .lineLimit(3)  // Menos espacio para la biografía
         }
         .padding()
         .onAppear {
